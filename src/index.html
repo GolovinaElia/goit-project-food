@@ -4,7 +4,7 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>FoodSta</title>
-      <link rel="icon" type="image/svg" href="./images/favicon.svg" />
+      <link rel="icon" type="image/svg" href="./img/favicon.svg" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -16,7 +16,7 @@
     <div class="container">
       <div class="box__header">
         <a href="#">
-          <img src="/src/images/icon-logo.svg" alt="Logo" width="66" height="52" />
+          <img src="./img/icon-logo.svg" alt="Logo" width="66" height="52" />
         </a>
         <nav class="header__nav">
           <ul class="header__nav-list list">
@@ -51,7 +51,7 @@
   
         <div class="menu is-hidden" data-menu>
           <button class="menu__close" type="button" data-menu-close>
-            <img src="/src/images/icon-cross.svg" alt="Logo" width="11" height="11" />
+            <img src="./img/icon-cross.svg" alt="Logo" width="11" height="11" />
           </button>
           <nav>
             <ul class="menu__list list">
@@ -77,8 +77,307 @@
     </div>
   </header>
   <main>
+    <section class="hero" id="home">
+      <div class="container container-wrap">
+        <div class="hero__wrap">
+          <div class="hero__wrapper">
+            <h1 class="hero_title">Enjoy Your Favorite Food From Anywhere</h1>
+            <p class="hero__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+              varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+              ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+            </p>
+            <button type="button" class="hero__button" data-modal-open>
+              Order Now
+            </button>
+          </div>
     
+          <div class="slider-wrapper">
+            <div class="wrap-slider">
+              <div class="swiper-button-next swiper-button-next-right"></div>
+              <div class="swiper-button-prev swiper-button-prev-left"></div>
+              <div class="swiper mySwiper wrap-picture">
+                <ul class="swiper-wrapper list">
+                  <li class="swiper-slide slider-item">
+                    <picture>
+                      <source srcset="
+                          ./img/falafel-desk-1x.png 1x,
+                          ./img/falafel-desk-2x.png 2x
+                        " media="(min-width: 1280px)" />
+    
+                      <source srcset="
+                          ./img/falafel-tab-1x.png 1x,
+                          ./img/falafel-tab-2x.png 2x
+                        " media="(min-width: 768px)" />
+    
+                      <img class="slider-img" src="./img/falafel-desk-1x.png" width="528" alt="Falafel" />
+                    </picture>
+                  </li>
+                  <li class="swiper-slide slider-item">
+                    <picture>
+                      <source srcset="
+                          ./img/slider-2-desk-1x.png 1x,
+                          ./img/slider-2-desk-2x.png 2x
+                        " media="(min-width: 1280px)" />
+    
+                      <source srcset="
+                          ./img/slider-2-tab-1x.png 1x,
+                          ./img/slider-2-tab-2x.png 2x
+                        " media="(min-width: 768px)" />
+    
+                      <img class="slider-img" src="./img/slider-2-desk-1x.png" width="528" alt="salat" />
+                    </picture>
+                  </li>
+                  <li class="swiper-slide slider-item">
+                    <picture>
+                      <source srcset="
+                          ./img/slider-3-desk-1x.png 1x,
+                          ./img/slider-3-desk-2x.png 2x
+                        " media="(min-width: 1280px)" />
+    
+                      <source srcset="
+                          ./img/slider-3-tab-1x.png 1x,
+                          ./img/slider-3-tab-2x.png 2x
+                        " media="(min-width: 768px)" />
+    
+                      <img class="slider-img" src="./img/slider-3-desk-1x.png" width="528" alt="eat" />
+                    </picture>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="favorites" id="menu">
+      <div class="container">
+        <h2 class="favorites__titel">Some of Our Favorites</h2>
+        <p class="favorites__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <ul class="favorites__list list">
+          <li class="favorites__item">
+            <picture>
+              <source srcset="
+                  ./img/burger-desk-1x.png 1x,
+                  ./img/burger-desk-2x.png 2x
+                " media="(min-width: 1280px)" />
+              <source srcset="
+                  ./img/burger-tab-1x.png 1x,
+                  ./img/burger-tab-2x.png 2x
+                " media="(min-width: 768px)" />
+              <source srcset="
+                  ./img/burger-mob-1x.png 1x,
+                  ./img/burger-mob-2x.png 2x
+                " media="(min-width: 320px)" />
+              <img src="./img/burger-desk-1x.png" width="315" alt="Gamburger" />
+            </picture>
+          </li>
+          <li class="favorites__item">
+            <picture>
+              <source srcset="
+                  ./img/pasta-desk-1x.png 1x,
+                  ./img/pasta-desk-2x.png 2x
+                " media="(min-width: 1280px)" />
+              <source srcset="./img/pasta-tab-1x.png 1x, ./img/pasta-tab-2x.png 2x" media="(min-width: 768px)" />
+              <source srcset="./img/pasta-mob-1x.png 1x, ./img/pasta-mob-2x.png 2x" media="(min-width: 320px)" />
+              <img src="./img/pasta-desk-1x.png" width="315" alt="Pasta" />
+            </picture>
+          </li>
+          <li class="favorites__item">
+            <picture>
+              <source srcset="
+                  ./img/pizza-desk-1x.png 1x,
+                  ./img/pizza-desk-2x.png 2x
+                " media="(min-width: 1280px)" />
+              <source srcset="./img/pizza-tab-1x.png 1x, ./img/pizza-tab-2x.png 2x" media="(min-width: 768px)" />
+              <source srcset="./img/pizza-mob-1x.png 1x, ./img/pizza-mob-2x.png 2x" media="(min-width: 320px)" />
+              <img src="./img/pizza-desk-1x.png" width="315" alt="Pizza" />
+            </picture>
+          </li>
+          <li class="favorites__item">
+            <picture>
+              <source srcset="
+                  ./img/chicken-desk-1x.png 1x,
+                  ./img/chicken-desk-2x.png 2x
+                " media="(min-width: 1280px)" />
+              <source srcset="
+                  ./img/chicken-tab-1x.png 1x,
+                  ./img/chicken-tab-2x.png 2x
+                " media="(min-width: 768px)" />
+              <img src="./img/chicken-desk-1x.png" width="315" alt="Chicken" />
+            </picture>
+          </li>
+          <li class="favorites__item">
+            <picture>
+              <source srcset="
+                  ./img/salat-desk-1x.png 1x,
+                  ./img/salat-desk-2x.png 2x
+                " media="(min-width: 1280px)" />
+              <source srcset="./img/salat-tab-1x.png 1x, ./img/salat-tab-2x.png 2x" media="(min-width: 768px)" />
+              <img src="./img/salat-desk-1x.png" width="315" alt="Salat" />
+            </picture>
+          </li>
+    
+          <li class="favorites__item">
+            <picture>
+              <source srcset="
+                  ./img/borshch-desk-1x.png 1x,
+                  ./img/borshch-desk-2x.png 2x
+                " media="(min-width: 1280px)" />
+              <source srcset="
+                  ./img/borshch-tab-1x.png 1x,
+                  ./img/borshch-tab-2x.png 2x
+                " media="(min-width: 768px)" />
+              <img src="./img/borshch-desk-1x.png" width="315" alt="Borshch" />
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </section>
+<section class="customers-say" id="service">
+  <div class="container customers-say__container">
+    <h2 class="customers-say__title">What our Customers Say</h2>
+    <p class="customers-say__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <ul class="customers-say-list list">
+      <li class="customers-say-list__item">
+        <img width="101" height="16" class="customers-say-list__icon" src="./img/icon-rating.svg" alt="stars" />
+        <p class="customers-say-list__text">
+          “The Best app I have used to order food in a while, so many options to
+          choose from too, I would recommend to a freind, No questions asked”
+        </p>
+        <div class="avatar">
+          <picture>
+            <source srcset="./img/man-1x.png 1x, ./img/man-2x.png 2x" />
+            <img class="avatar__icon" src="./img/man-1x.png" alt="man" />
+          </picture>
+          <div class="avatar__content">
+            <h3 class="avatar__title">Sumith Shah</h3>
+            <p class="avatar__text">Some Dude</p>
+          </div>
+        </div>
+      </li>
+      <li class="customers-say-list__item">
+        <img width="101" height="16" class="customers-say-list__icon" src="./img/icon-rating.svg" alt="stars" />
+        <p class="customers-say-list__text">
+          “The ease with which I can just go in and order what i want was
+          amazing, It has been a very pleasant experience ordering from this
+          app”
+        </p>
+        <div class="avatar">
+          <picture class="avatar__icon">
+            <source srcset="./img/women-1x.png 1x, ./img/women-2x.png 2x" />
+            <img src="./img/women-1x.png" alt="woman" />
+          </picture>
+          <div class="avatar__content">
+            <h3 class="avatar__title">Sumith Shah</h3>
+            <p class="avatar__text">Some Dude</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="subscribe" id="contact">
+  <div class="container">
+    <div class="subscribe__box">
+      <div class="subscribe__wrap">
+        <picture class="subscribe__img">
+          <source srcset="
+              ./img/banana-desk-1x.png 1x,
+              ./img/banana-desk-2x.png 2x
+            " media="(min-width: 1280px)" />
+          <source srcset="./img/banana-tab-1x.png 1x, ./img/banana-tab-2x.png 2x" media="(min-width: 768px)" />
+          <source srcset="./img/banana-mob-1x.png 1x, ./img/banana-mob-2x.png 2x" media="(max-width: 768px)" />
+          <img src="./img/banana-desk-1x.png" alt="Image of banana" width="608" class="img" />
+        </picture>
+      </div>
+      <div class="subscribe__wrap-form">
+        <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+        <p class="subscribe__desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique.
+        </p>
+        <form class="subscribe__form">
+          <label class="subscribe__label">
+            <input type="email" id="sub-email" class="subscribe__input subscribe__item" name="subscribe-email"
+              placeholder="Enter your email" />
+            <span class="subscribe__error">
+              &#9888; Not a valid email address (example@email.com)</span>
+          </label>
+          <button type="submit" class="subscribe__btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
   </main>
+  <footer class="footer">
+    <div class="section">
+      <div class="container">
+        <div class="menu-wrap-footer">
+          <div class="navigation-footer">
+            <a href="#" class="logo-footer">
+              <img src="./img/icon-logo.svg" alt="site logo" />
+            </a>
+  
+            <ul class="menu-footer list">
+              <li class="menu-footer__item">
+                <a href="#home" class="menu-footer__link">Home</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#about" class="menu-footer__link">About</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#service" class="menu-footer__link">Service</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#menu" class="menu-footer__link">Menu</a>
+              </li>
+              <li class="menu-footer__item">
+                <a href="#contact" class="menu-footer__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="form-wrap">
+            <b class="form-title">Subscribe</b>
+            <form class="form" autocomplete="off">
+              <label class="form__label">
+                <input type="email" name="form" class="form__input" placeholder="Enter your email" />
+                <span class="error">
+                  &#9888; Not a valid email address (example@email.com)</span>
+              </label>
+              <button type="submit" class="form__button">Subscribe</button>
+            </form>
+            <p class="form-text">
+              By subscribing you agree to with our
+              <a class="form-text-second">Privacy Policy</a>
+            </p>
+          </div>
+        </div>
+  
+        <div class="info-wrap">
+          <ul class="info list">
+            <li class="info__item">
+              <a href="#" class="info__link">Privacy Policy</a>
+            </li>
+            <li class="info__item">
+              <a href="#" class="info__link">Terms of Service</a>
+            </li>
+            <li class="info__item">
+              <a href="#" class="info__link">Cookies Settings</a>
+            </li>
+          </ul>
+  
+          <p class="copy-text">2022 FoodSta. All right reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
