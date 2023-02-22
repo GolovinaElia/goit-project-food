@@ -6,7 +6,7 @@
 
   background-position: top;
   background-size: cover;
-  background-image: url(/src/img/bg-offer/bg-off-320-1x.png);
+  background-image: url(/img/bg-offer/bg-off-320-1x.png);
   background-repeat: no-repeat;
 }
 
@@ -15,7 +15,7 @@
     max-width: 768px;
     padding-top: 202px;
     padding-bottom: 100px;
-    background-image: url(/src/img/bg-offer/bg-off-tab-1x.png);
+    background-image: url(/img/bg-offer/bg-off-tab-1x.png);
     margin-top: -50px;
   }
 }
@@ -25,7 +25,7 @@
     max-width: 1600px;
     padding-top: 290px;
     padding-bottom: 43px;
-    background-image: url(/src/img/bg-offer/bg-off-tab-1x.png);
+    background-image: url(/img/bg-offer/bg-off-tab-1x.png);
   }
 }
 
@@ -84,11 +84,11 @@
 }
 
 .icon-delive::before {
-  background-image: url(/src/img/icon-rocket.svg);
+  background-image: url(/img/icon-rocket.svg);
 }
 
 .icon-order::before {
-  background-image: url(/src/img/icon-finger.svg);
+  background-image: url(/img/icon-finger.svg);
 }
 
 .offerings__button {
@@ -122,7 +122,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .offerings__button__img {
+  .offerings__img {
     width: 257px;
     height: 345px;
     left: 33px;
@@ -130,7 +130,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .offerings__button__img {
+  .offerings__img {
     width: 396px;
     height: 529px;
     left: 52px;
@@ -138,7 +138,7 @@
   }
 }
 
-.offerings__button__img--bg-img {
+.offerings--bg-img {
   background-color: var(--white__secondary__color);
   border-radius: 50%;
   width: 255px;
@@ -149,7 +149,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .offerings {
+  .offerings--bg-img {
     width: 325px;
     height: 325px;
     top: 12px;
@@ -158,7 +158,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .offerings {
+  .offerings--bg-img {
     width: 502px;
     height: 502px;
     top: 20px;
@@ -174,156 +174,198 @@
   position: relative;
 }
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .offerings--border {
-width: 357px;
-  height: 357px;
+    width: 357px;
+    height: 357px;
   }
-  }
+}
 
-  @include desktop {
+@media screen and (min-width: 1280px) {
+  .offerings--border {
     width: 550px;
     height: 550px;
   }
 }
 
-&--img-pos {
+.offerings--img-pos {
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
+}
 
-  @include tablet {
+@media screen and (min-width: 768px) {
+  .offerings--img-pos {
     display: block;
   }
+}
 
-  @include desktop {
+@media screen and (min-width: 1280px) {
+  .offerings--img-pos {
     margin-bottom: 0;
   }
 }
 
-&__link {
-  @include fonts(400, 13px, 1.5);
-  color: $secondary__text__color;
+.offerings__link {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--secondary__text__color);
   display: flex;
+}
 
-  &::after {
-    content: '';
-    background-image: url(/src/img/icon-read.svg);
-    width: 14px;
-    height: 14px;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    fill: currentColor;
-    @include animation(fill);
-  }
+.offerings__link::after {
+  content: '';
+  background-image: url(/img/icon-read.svg);
+  width: 14px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  &::after:hover,
-  &::after:focus {
-    fill: $btn__green__color;
-  }
+.offerings__link::after:hover,
+.offerings__link::after:focus {
+  fill: var(--btn__green__color);
+}
 
-  @include desktop {
+@media screen and (min-width: 1280px) {
+  .offerings__link {
     display: none;
   }
-
-  @include animation(color);
 }
 
-&__link:hover,
-&__link:focus {
-  color: $btn__green__color;
+.offerings__link__link:hover,
+.offerings__link__link:focus {
+  color: var(--btn__green__color);
 }
 
-&--links {
+.offerings__link--links {
   display: flex;
   align-items: baseline;
   gap: 24px;
 }
-}
+
 
 .offerings-item {
   margin-bottom: 28px;
+}
 
-  @include tablet {
+@media screen and (min-width: 768px) {
+  .offerings-item {
     margin-bottom: 0;
     width: 252px;
   }
 }
 
-.offerings-body {
-  @include desktop {
+@media screen and (min-width: 1280px) {
+  .offerings-body {
     display: block;
   }
 }
 
 .offerings-name {
   padding-bottom: 28px;
-  color: $secondary__text__color;
-  @include fonts(700, 28px, 1.18);
+  color: var(--secondary__text__color);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+}
 
-  @include tablet {
-    @include fonts(700, 42px, 1.16);
+@media screen and (min-width: 768px) {
+  .offerings-name {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.16;
     padding-bottom: 20px;
   }
+}
 
-  @include desktop {
-    @include fonts(700, 42px, 1.19);
+@media screen and (min-width: 1280px) {
+  .offerings-name {
+    font-weight: 700;
+    line-height: 1.19;
   }
 }
+
 
 .offerings-text-own {
-  @include fonts(400, 14px, 1.18);
+  font-size: 14px;
+  line-height: 1.18;
+}
 
-  @include tablet {
-    @include fonts(400, 16px, 1.18);
-  }
-
-  @include desktop {
-    @include fonts(400, 16px, 1.5);
+@media screen and (min-width: 768px) {
+  .offerings-text-own {
+    font-weight: 400;
+    line-height: 1.18;
   }
 }
 
-.offerings-text {
-  color: $secondary__text__color;
-  @include fonts(400, 14px, 1.18);
-
-  @include tablet {
-    @include fonts(400, 14px, 1.14);
+@media screen and (min-width: 1280px) {
+  .offerings-text-own {
+    line-height: 1.5;
   }
+}
 
-  @include desktop {
-    @include fonts(400, 14px, 1.4);
+
+.offerings-text {
+  color: var(--secondary__text__color);
+  font-size: 14px;
+  line-height: 1.18;
+}
+
+@media screen and (min-width: 768px) {
+  .offerings-text {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .offerings-text {
+    font-size: 14px;
+    line-height: 1.4;
   }
 }
 
 .offerings-name-list {
   padding-bottom: 16px;
-  color: $secondary__text__color;
-  @include fonts(700, 18px, 1.16);
+  color: var(--secondary__text__color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16;
+}
 
-  @include desktop {
-    @include fonts(700, 18px, 1.38);
+@media screen and (min-width: 1280px) {
+  .offerings-name-list {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.38;
   }
 }
 
 .offerings-center {
   margin-bottom: 28px;
+}
 
-  @include tablet {
+@media screen and (min-width: 768px) {
+  .offerings-center {
     width: 526px;
     margin-bottom: 40px;
   }
 }
 
-.offerings-list {
-  @include tablet {
+@media screen and (min-width: 768px) {
+  .offerings-list {
     display: flex;
     gap: 116px;
     margin-bottom: 40px;
   }
+}
 
-  @include desktop {
+@media screen and (min-width: 1280px) {
+  .offerings-list {
     margin-bottom: 32px;
     gap: 67px;
   }
-} */
+}
