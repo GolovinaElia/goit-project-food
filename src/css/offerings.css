@@ -240,7 +240,7 @@
   color: var(--btn__green__color);
 }
 
-.offerings__link--links {
+.offerings--links {
   display: flex;
   align-items: baseline;
   gap: 24px;
