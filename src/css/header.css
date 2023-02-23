@@ -72,9 +72,11 @@
 }
 
 .header__nav-link:hover,
-.header__nav-link:focus {
+.header__nav-link:focus,
+.header__nav-link.current {
   color: var(--btn__green__color);
 }
+
 
 @media screen and (min-width: 1280px) {
   .header__nav-link {

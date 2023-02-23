@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   const navInit = () => {
-    const nav = document.querySelector('.nav'); // ищем блок навигации
-    const links = document.querySelectorAll('.nav__link'); // ищем все навигационные ссылки
+    const nav = document.querySelector('.header__nav'); // ищем блок навигации
+    const links = document.querySelectorAll('.header__nav-link'); // ищем все навигационные ссылки
     const sections = document.querySelectorAll('.anchor'); // ищем все секции
     sections.forEach(section => { // для каждой секции
       if (window.scrollY >= section.offsetTop - 1) { // проверяем, если страница прокручена больше, чем расстояние

@@ -11,6 +11,10 @@
     sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--main__text__color);
   font-family: var(--main__font);
