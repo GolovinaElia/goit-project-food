@@ -1,0 +1,39 @@
+.go-up {
+  rotate: -90deg;
+  fill: rgba(0, 0, 0, 0.2);
+  transition: fill var(----accent__text__color);
+}
+
+.go-up-btn {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .go-up-btn {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: var(----accent__text__color) solid 2px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.25);
+    transition: all var(----accent__text__color);
+  }
+}
+
+.go-up-btn:hover,
+.go-up-btn:focus {
+  background-color: var(--yellow__bg__color);
+  transform: scale(1.1);
+}
+
+.go-up-btn:hover .go-up,
+.go-up-btn:focus .go-up {
+  fill: (----accent__text__color);
+
+}

@@ -1,5 +1,5 @@
 .header {
-  padding: 10px 16px 10px 16px;
+  padding: 10px 0;
   background-color: var(--white__secondary__color);
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
   position: relative;
@@ -8,6 +8,22 @@
 .box__header {
   display: flex;
   align-items: center;
+}
+
+.box__header img {
+  animation-name: changeLogoPosition;
+  animation-duration: 7.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeLogoPosition {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 
 .header__nav {
@@ -96,6 +112,12 @@
   .header__button:hover,
   .header__button:focus {
     background-color: #ffe450;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .header__button {
+    display: none;
   }
 }
 

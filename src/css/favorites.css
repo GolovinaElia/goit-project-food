@@ -109,9 +109,70 @@
   .favorites__item:nth-last-child(-n + 3) {
     display: block;
   }
+
+  .favorites__item:hover img,
+  .favorites__item:focus img {
+    animation-name: changeItemPosition;
+    animation-duration: 500ms;
+    animation-delay: 250ms;
+  }
 }
 
 .favorites__item:hover,
 .favorites__item:focus {
   border-color: #BBF330;
+  transform: scale(1.15);
+}
+
+.favorites__item:hover img,
+.favorites__item:focus img {
+  animation-name: changeItemPosition;
+  animation-duration: 900ms;
+  animation-delay: 400ms;
+}
+
+@keyframes changeItemPosition {
+  0% {
+    transform: rotate(-15deg);
+  }
+
+  10% {
+    transform: rotate(15deg);
+  }
+
+  20% {
+    transform: rotate(-15deg);
+  }
+
+  30% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-15deg);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+
+  60% {
+    transform: rotate(-15deg);
+  }
+
+  70% {
+    transform: rotate(15deg);
+  }
+
+  80% {
+    transform: rotate(-15deg);
+  }
+
+  90% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: none;
+  }
 }

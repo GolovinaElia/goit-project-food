@@ -17,15 +17,15 @@
       <link rel="stylesheet" href="./css/favorites.css" />
       <link rel="stylesheet" href="./css/customers-say.css" />
       <link rel="stylesheet" href="./css/subscribe.css" />
-        <link rel="stylesheet" href="./css/footer.css" />
+      <link rel="stylesheet" href="./css/footer.css" />
+      <link rel="stylesheet" href="./css/modal.css" />
+      <link rel="stylesheet" href="./css/up-button.css" />
     </head>
   <body>
   <header class="header">
     <div class="container">
       <div class="box__header">
-        <a href="#">
           <img src="./img/icon-logo.svg" alt="Logo" width="66" height="52" />
-        </a>
         <nav class="header__nav">
           <ul class="header__nav-list list">
             <li class="header__nav-item">
@@ -471,8 +471,46 @@
       </div>
     </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="modal-close" data-modal-close></button>
+      <p class="modal-title">Order Form</p>
+      <form class="modal-form">
+        <div class="modal-field">
+          <label for="user-name" class="input-text">Name</label>
+          <div class="input-wrap">
+            <input type="text" class="modal-input" name="user-name" required id="user-name" placeholder="Enter your name"
+              minlength="2" maxlength="25" />
+          </div>
+        </div>
+        <div class="modal-field">
+          <label for="user-tel" class="input-text">Phone number</label>
+          <div class="input-wrap">
+            <input type="tel" class="modal-input" name="user-tel" required id="user-tel"
+              placeholder="Enter your phone number" minlength="10" />
+          </div>
+        </div>
+        <div class="modal-field">
+          <label for="user-mail" class="input-text">E-mail</label>
+          <div class="input-wrap">
+            <input type="email" class="modal-input" name="user-mail" required id="user-mail"
+              placeholder="Enter your e-mail" />
+          </div>
+        </div>
+        <button type="submit" class="modal-button">Send</button>
+      </form>
+    </div>
+  </div>
+  <div>
+    <a class="go-up-btn" href="#home" id="go-up-btn">
+      <svg class="go-up" width="28" height="28">
+        <use href="./img/sprite.svg#arrow-right"></use>
+      </svg>
+    </a>
+  </div>
   <script src="./js/mobile_menu.js"></script>
   <script src="./js/modal.js"></script>
+    <script src="./js/back-to-top.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/slider.js"></script>
     <script type="module" src="/main.js"></script>
