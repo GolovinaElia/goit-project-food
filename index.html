@@ -21,7 +21,7 @@
       
       
       <script type="module" crossorigin src="/goit-project-food/assets/index-697f5db6.js"></script>
-      <link rel="stylesheet" href="/goit-project-food/assets/index-f8c43aa8.css">
+      <link rel="stylesheet" href="/goit-project-food/assets/index-5f5a0ea5.css">
     </head>
   <body>
  <header class="header">
@@ -408,32 +408,63 @@
 </footer>
   <div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <button type="button" class="modal-close" data-modal-close></button>
-    <p class="modal-title">Order Form</p>
-    <form class="modal-form">
-      <div class="modal-field">
-        <label for="user-name" class="input-text">Name</label>
-        <div class="input-wrap">
-          <input type="text" class="modal-input" name="user-name" required id="user-name" placeholder="Enter your name"
-            minlength="2" maxlength="25" />
+    <button class="modal__button" type="button" data-modal-close>
+      <svg class="header__button-close-icon" width="11" height="11">
+        <use href="/goit-project-food/assets/sprite-cceeb4a6.svg#cross"></use>
+      </svg>
+    </button>
+
+    <p class="modal__title">Order From</p>
+    <form class="modal__form login-form sign-in-form" id="sign-up-form" method="post" enctype="multipart/form-data">
+      <label class="modal__label" for="name">Name</label>
+      <div class="modal__position">
+        <input type="text" class="modal__input form" name="name" title="Valentyn Strykalo" id="name" required
+          placeholder="Your name" minlength="3" maxlength="25">
+        <div class="modal__error">
+          <div class="modal__img-error"><img src="/goit-project-food/assets/error-modal-cae8e676.svg" alt="error" width="12" height="12">
+          </div>
+          <p class="modal__error-text">The name must be between 3 and 25 characters</p>
+        </div>
+        <div class="modal__errorr">
+          <div class="modal__img-errorr"><img src="/goit-project-food/assets/error-modal-cae8e676.svg" alt="error" width="12" height="12">
+          </div>
+          <p class="modal__errorr-text">This field is required</p>
         </div>
       </div>
-      <div class="modal-field">
-        <label for="user-tel" class="input-text">Phone number</label>
-        <div class="input-wrap">
-          <input type="tel" class="modal-input" name="user-tel" required id="user-tel"
-            placeholder="Enter your phone number" minlength="10" />
+      <label class="modal__label" for="phone">Phone number</label>
+      <div class="modal__position">
+        <input type="tel" class="modal__input phone form" name="phone_number" title="+38 (063) 000 00 00" id="phone" required
+          placeholder="+00 (000) 000-00-00" pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="19">
+        <div class="modal__error">
+          <div class="modal__img-error"><img src="/goit-project-food/assets/error-modal-cae8e676.svg" alt="error" width="12" height="12">
+          </div>
+          <p class="modal__error-text">This phone must be in the format 099 000 00 00</p>
+        </div>
+        <div class="modal__errorr">
+          <div class="modal__img-errorr"><img src="/goit-project-food/assets/error-modal-cae8e676.svg" alt="error" width="12" height="12">
+          </div>
+          <p class="modal__errorr-text">This field is required</p>
+        </div>
+
+      </div>
+      <label class="modal__label" for="email">E-mail</label>
+      <div class="modal__position">
+        <input type="email" class="modal__input form" name="email" title="example@gmail.com" id="email" required
+          placeholder="example@gmail.com">
+        <div class="modal__error">
+          <div class="modal__img-error"><img src="/goit-project-food/assets/error-modal-cae8e676.svg" alt="error" width="12" height="12">
+          </div>
+          <p class="modal__error-text">Please enter a valid email address</p>
+        </div>
+        <div class="modal__errorr">
+          <div class="modal__img-errorr"><img src="/goit-project-food/assets/error-modal-cae8e676.svg" alt="error" width="12" height="12">
+          </div>
+          <p class="modal__errorr-text">This field is required</p>
         </div>
       </div>
-      <div class="modal-field">
-        <label for="user-mail" class="input-text">E-mail</label>
-        <div class="input-wrap">
-          <input type="email" class="modal-input" name="user-mail" required id="user-mail"
-            placeholder="Enter your e-mail" />
-        </div>
-      </div>
-      <button type="submit" class="modal-button">Send</button>
+      <button class="button--modal" type="submit" onclick="document.getElementById('sign-up-form').style.display = 'none';">Send</button>
     </form>
+
   </div>
 </div>
 <a class="go-up-btn" href="#home" id="go-up-btn">
@@ -444,7 +475,8 @@
   <script src="./js/mobile_menu.js"></script>
   <script src="./js/modal.js"></script>
   <script src="./js/back-to-top.js"></script>
-  <script src="./js/active-link.js"></script>
+  <script src="./js/submit.js"></script>
+  <script src="./js/phone.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/slider.js"></script>
   
