@@ -20,256 +20,254 @@
       
       
       
-        
-      <script type="module" crossorigin src="/goit-project-food/assets/index-6e07c66f.js"></script>
-      <link rel="stylesheet" href="/goit-project-food/assets/index-6d525a03.css">
+      <script type="module" crossorigin src="/goit-project-food/assets/index-697f5db6.js"></script>
+      <link rel="stylesheet" href="/goit-project-food/assets/index-f8c43aa8.css">
     </head>
   <body>
-  <header class="header">
-    <div class="container">
-      <div class="box__header">
-          <img src="/goit-project-food/assets/icon-logo-d483e1fe.svg" alt="Logo" width="66" height="52" />
-        <nav class="header__nav">
-          <ul class="header__nav-list list">
-            <li class="header__nav-item">
-              <a class="header__nav-link link" href="#home">Home</a>
+ <header class="header">
+  <div class="container">
+    <div class="box__header">
+      <img src="/goit-project-food/assets/icon-logo-d483e1fe.svg" alt="Logo" width="66" height="52" />
+      <nav class="header__nav">
+        <ul class="header__nav-list list">
+          <li class="header__nav-item">
+            <a class="header__nav-link link" href="#home">Home</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link link" href="#about">About</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link link" href="#service">Service</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link link" href="#menu">Menu</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="header__button" type="button" data-modal-open>
+        Order Now
+      </button>
+
+      <button class="header__button-burger" type="button" data-menu-open>
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#7EB101" class="header__burger-icon">
+          <path
+            d="M2.333 7A1.167 1.167 0 0 1 3.5 5.833h21a1.167 1.167 0 0 1 0 2.334h-21A1.167 1.167 0 0 1 2.333 7Zm0 7.037A1.167 1.167 0 0 1 3.5 12.871h21a1.167 1.167 0 1 1 0 2.333h-21a1.167 1.167 0 0 1-1.167-1.167ZM3.5 19.908a1.167 1.167 0 0 0 0 2.333h21a1.167 1.167 0 1 0 0-2.333h-21Z" />
+        </svg>
+      </button>
+
+      <div class="menu is-hidden" data-menu>
+        <button class="menu__close" type="button" data-menu-close>
+          <img src="/goit-project-food/assets/icon-cross-6bdbbf0c.svg" alt="Logo" width="11" height="11" />
+        </button>
+        <nav>
+          <ul class="menu__list list">
+            <li class="menu__item">
+              <a class="menu__link link" href="#home">Home</a>
             </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link link" href="#about">About</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="#about">About</a>
             </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link link" href="#service">Service</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="#service">Service</a>
             </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link link" href="#menu">Menu</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="#menu">Menu</a>
             </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link link" href="#contact">Contact</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
-  
-        <button class="header__button" type="button" data-modal-open>
+      </div>
+    </div>
+  </div>
+</header>
+  <main>
+  <section class="hero" id="home">
+  <div class="container container-wrap">
+    <div class="hero__wrap">
+      <div class="hero__wrapper">
+        <h1 class="hero_title">Enjoy Your Favorite Food From Anywhere</h1>
+        <p class="hero__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+        </p>
+        <button type="button" class="hero__button" data-modal-open>
           Order Now
         </button>
-  
-        <button class="header__button-burger" type="button" data-menu-open>
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#7EB101" class="header__burger-icon">
-            <path
-              d="M2.333 7A1.167 1.167 0 0 1 3.5 5.833h21a1.167 1.167 0 0 1 0 2.334h-21A1.167 1.167 0 0 1 2.333 7Zm0 7.037A1.167 1.167 0 0 1 3.5 12.871h21a1.167 1.167 0 1 1 0 2.333h-21a1.167 1.167 0 0 1-1.167-1.167ZM3.5 19.908a1.167 1.167 0 0 0 0 2.333h21a1.167 1.167 0 1 0 0-2.333h-21Z" />
-          </svg>
-        </button>
-  
-        <div class="menu is-hidden" data-menu>
-          <button class="menu__close" type="button" data-menu-close>
-            <img src="/goit-project-food/assets/icon-cross-6bdbbf0c.svg" alt="Logo" width="11" height="11" />
-          </button>
-          <nav>
-            <ul class="menu__list list">
-              <li class="menu__item">
-                <a class="menu__link link" href="#home">Home</a>
+      </div>
+
+      <div class="slider-wrapper">
+        <div class="wrap-slider">
+          <div class="swiper-button-next swiper-button-next-right"></div>
+          <div class="swiper-button-prev swiper-button-prev-left"></div>
+          <div class="swiper mySwiper wrap-picture">
+            <ul class="swiper-wrapper list">
+              <li class="swiper-slide slider-item">
+                <picture>
+                  <source srcset="/goit-project-food/assets/falafel-desk-1x-6407ea78.png 1x, /goit-project-food/assets/falafel-desk-2x-484b17d4.png 2x" media="(min-width: 1280px)" />
+
+                  <source srcset="/goit-project-food/assets/falafel-tab-1x-a37a94f0.png 1x, /goit-project-food/assets/falafel-tab-2x-17cc97db.png 2x" media="(min-width: 768px)" />
+
+                  <img class="slider-img" src="/goit-project-food/assets/falafel-desk-1x-6407ea78.png" width="528" alt="Falafel" />
+                </picture>
               </li>
-              <li class="menu__item">
-                <a class="menu__link link" href="#about">About</a>
+              <li class="swiper-slide slider-item">
+                <picture>
+                  <source srcset="/goit-project-food/assets/slider-2-desk-1x-313888e6.png 1x, /goit-project-food/assets/slider-2-desk-2x-122f9705.png 2x" media="(min-width: 1280px)" />
+
+                  <source srcset="/goit-project-food/assets/slider-2-tab-1x-0fe5e82e.png 1x, /goit-project-food/assets/slider-2-tab-2x-420fab7b.png 2x" media="(min-width: 768px)" />
+
+                  <img class="slider-img" src="/goit-project-food/assets/slider-2-desk-1x-313888e6.png" width="528" alt="salat" />
+                </picture>
               </li>
-              <li class="menu__item">
-                <a class="menu__link link" href="#service">Service</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link link" href="#menu">Menu</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link link" href="#contact">Contact</a>
+              <li class="swiper-slide slider-item">
+                <picture>
+                  <source srcset="/goit-project-food/assets/slider-3-desk-1x-d44381d8.png 1x, /goit-project-food/assets/slider-3-desk-2x-c113646d.png 2x" media="(min-width: 1280px)" />
+
+                  <source srcset="/goit-project-food/assets/slider-3-tab-1x-ed1360fb.png 1x, /goit-project-food/assets/slider-3-tab-2x-2a3bffe3.png 2x" media="(min-width: 768px)" />
+
+                  <img class="slider-img" src="/goit-project-food/assets/slider-3-desk-1x-d44381d8.png" width="528" alt="eat" />
+                </picture>
               </li>
             </ul>
-          </nav>
+          </div>
         </div>
       </div>
     </div>
-  </header>
-  <main>
-    <section class="hero anchor" data-section="home" id="home">
-      <div class="container container-wrap">
-        <div class="hero__wrap">
-          <div class="hero__wrapper">
-            <h1 class="hero_title">Enjoy Your Favorite Food From Anywhere</h1>
-            <p class="hero__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-              ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+  </div>
+</section>
+   <section class="offerings-main" id="about">
+  <div class="container offering-container">
+    <div class="offerings-img-cards">
+      <div class="offerings-card">
+        <div class="offerings--img-pos">
+          <div class="offerings--border">
+            <div class="offerings--bg-img">
+              <picture>
+                <source srcset="/goit-project-food/assets/apple-desk-1x-a8d82c49.png 1x, /goit-project-food/assets/apple-desk-2x-6f6325fd.png 2x" media="(min-width: 1280px)" />
+                <source srcset="/goit-project-food/assets/apple-tab-1x-aadafe04.png 1x, /goit-project-food/assets/apple-tab-2x-8ad87212.png 2x" media="(min-width: 768px)" />
+                <source srcset="/goit-project-food/assets/apple-mob-1x-a78665c3.png 1x, /goit-project-food/assets/apple-mob-2x-a8ac185b.png 2x" media="(min-width: 320px)" />
+                <img src="/goit-project-food/assets/apple-desk-1x-a8d82c49.png" alt="apple" width="396" class="offerings__img" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offerings-apples">
+        <picture>
+          <source srcset="/goit-project-food/assets/apple-tab-2-1x-efc4568f.png 1x, /goit-project-food/assets/apple-tab-2-2x-4ed4895b.png 2x" media="(min-width: 768px)" />
+          <img src="/src/img/apple-tab-2-1x.png" alt="apple" width="166" class="apple-tablet" />
+        </picture>
+        <picture>
+          <source srcset="/goit-project-food/assets/apple-tab-3-1x-43d23c70.png 1x, /goit-project-food/assets/apple-tab-3-2x-31927d7d.png 2x" media="(min-width: 768px)" />
+          <img src="/src/img/apple-tab-3-1x.png" alt="apple" width="108" class="apple-tablet-last" />
+        </picture>
+      </div>
+    </div>
+
+    <div class="offerings-body">
+      <div class="offerings-center">
+        <h2 class="offerings-name">What’s Special About Our Offerings</h2>
+        <p class="offerings-text-own">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+          ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+        </p>
+      </div>
+      <div class="offerings-main-text">
+        <ul class="offerings-list list">
+          <li class="offerings-item icon-delive">
+            <h3 class="offerings-name-list">Fasest Delivery</h3>
+            <p class="offerings-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros.
             </p>
-            <button type="button" class="hero__button" data-modal-open>
+          </li>
+          <li class="offerings-item icon-order">
+            <h3 class="offerings-name-list">Easy to order</h3>
+            <p class="offerings-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros.
+            </p>
+          </li>
+        </ul>
+        <div class="offerings--links">
+          <div class="links">
+            <button class="offerings__button" type="button" data-modal-open>
               Order Now
             </button>
           </div>
-    
-          <div class="slider-wrapper">
-            <div class="wrap-slider">
-              <div class="swiper-button-next swiper-button-next-right"></div>
-              <div class="swiper-button-prev swiper-button-prev-left"></div>
-              <div class="swiper mySwiper wrap-picture">
-                <ul class="swiper-wrapper list">
-                  <li class="swiper-slide slider-item">
-                    <picture>
-                      <source srcset="/goit-project-food/assets/falafel-desk-1x-6407ea78.png 1x, /goit-project-food/assets/falafel-desk-2x-484b17d4.png 2x" media="(min-width: 1280px)" />
-    
-                      <source srcset="/goit-project-food/assets/falafel-tab-1x-a37a94f0.png 1x, /goit-project-food/assets/falafel-tab-2x-17cc97db.png 2x" media="(min-width: 768px)" />
-    
-                      <img class="slider-img" src="/goit-project-food/assets/falafel-desk-1x-6407ea78.png" width="528" alt="Falafel" />
-                    </picture>
-                  </li>
-                  <li class="swiper-slide slider-item">
-                    <picture>
-                      <source srcset="/goit-project-food/assets/slider-2-desk-1x-313888e6.png 1x, /goit-project-food/assets/slider-2-desk-2x-122f9705.png 2x" media="(min-width: 1280px)" />
-    
-                      <source srcset="/goit-project-food/assets/slider-2-tab-1x-0fe5e82e.png 1x, /goit-project-food/assets/slider-2-tab-2x-420fab7b.png 2x" media="(min-width: 768px)" />
-    
-                      <img class="slider-img" src="/goit-project-food/assets/slider-2-desk-1x-313888e6.png" width="528" alt="salat" />
-                    </picture>
-                  </li>
-                  <li class="swiper-slide slider-item">
-                    <picture>
-                      <source srcset="/goit-project-food/assets/slider-3-desk-1x-d44381d8.png 1x, /goit-project-food/assets/slider-3-desk-2x-c113646d.png 2x" media="(min-width: 1280px)" />
-    
-                      <source srcset="/goit-project-food/assets/slider-3-tab-1x-ed1360fb.png 1x, /goit-project-food/assets/slider-3-tab-2x-2a3bffe3.png 2x" media="(min-width: 768px)" />
-    
-                      <img class="slider-img" src="/goit-project-food/assets/slider-3-desk-1x-d44381d8.png" width="528" alt="eat" />
-                    </picture>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div class="links">
+            <a class="offerings__link link" href="">Read More</a>
           </div>
         </div>
       </div>
-    </section>
-    <section class="offerings-main anchor" data-section="about" id="about">
-      <div class="container offering-container">
-        <div class="offerings-img-cards">
-          <div class="offerings-card">
-            <div class="offerings--img-pos">
-              <div class="offerings--border">
-                <div class="offerings--bg-img">
-                  <picture>
-                    <source srcset="/goit-project-food/assets/apple-desk-1x-a8d82c49.png 1x, /goit-project-food/assets/apple-desk-2x-6f6325fd.png 2x" media="(min-width: 1280px)" />
-                    <source srcset="/goit-project-food/assets/apple-tab-1x-aadafe04.png 1x, /goit-project-food/assets/apple-tab-2x-8ad87212.png 2x" media="(min-width: 768px)" />
-                    <source srcset="/goit-project-food/assets/apple-mob-1x-a78665c3.png 1x, /goit-project-food/assets/apple-mob-2x-a8ac185b.png 2x" media="(min-width: 320px)" />
-                    <img src="/goit-project-food/assets/apple-desk-1x-a8d82c49.png" alt="apple" width="396" class="offerings__img" />
-                  </picture>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="offerings-apples">
-            <picture>
-              <source srcset="/goit-project-food/assets/apple-tab-2-1x-efc4568f.png 1x, /goit-project-food/assets/apple-tab-2-2x-4ed4895b.png 2x" media="(min-width: 768px)" />
-              <img src="/src/img/apple-tab-2-1x.png" alt="apple" width="166" class="apple-tablet" />
-            </picture>
-            <picture>
-              <source srcset="/goit-project-food/assets/apple-tab-3-1x-43d23c70.png 1x, /goit-project-food/assets/apple-tab-3-2x-31927d7d.png 2x" media="(min-width: 768px)" />
-              <img src="/src/img/apple-tab-3-1x.png" alt="apple" width="108" class="apple-tablet-last" />
-            </picture>
-          </div>
-        </div>
-    
-        <div class="offerings-body">
-          <div class="offerings-center">
-            <h2 class="offerings-name">What’s Special About Our Offerings</h2>
-            <p class="offerings-text-own">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-              ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-            </p>
-          </div>
-          <div class="offerings-main-text">
-            <ul class="offerings-list list">
-              <li class="offerings-item icon-delive">
-                <h3 class="offerings-name-list">Fasest Delivery</h3>
-                <p class="offerings-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim in eros.
-                </p>
-              </li>
-              <li class="offerings-item icon-order">
-                <h3 class="offerings-name-list">Easy to order</h3>
-                <p class="offerings-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse varius enim in eros.
-                </p>
-              </li>
-            </ul>
-            <div class="offerings--links">
-              <div class="links">
-                <button class="offerings__button" type="button" data-modal-open>
-                  Order Now
-                </button>
-              </div>
-              <div class="links">
-                <a class="offerings__link link" href="">Read More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </div>
+</section>
+    <section class="favorites" id="service">
+  <div class="container">
+    <h2 class="favorites__title">Some of Our Favorites</h2>
+    <p class="favorites__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <ul class="favorites__list list">
+      <li class="favorites__item">
+        <picture>
+          <source srcset="/goit-project-food/assets/burger-desk-1x-c7872581.png 1x, /goit-project-food/assets/burger-desk-2x-b039d7cc.png 2x" media="(min-width: 1280px)" />
+          <source srcset="/goit-project-food/assets/burger-tab-1x-ce54601c.png 1x, /goit-project-food/assets/burger-tab-2x-7ba9dc87.png 2x" media="(min-width: 768px)" />
+          <source srcset="/goit-project-food/assets/burger-mob-1x-6b192506.png 1x, /goit-project-food/assets/burger-mob-2x-ae4a415c.png 2x" media="(min-width: 320px)" />
+          <img src="/goit-project-food/assets/burger-desk-1x-c7872581.png" width="315" alt="Gamburger" />
+        </picture>
+      </li>
+      <li class="favorites__item">
+        <picture>
+          <source srcset="/goit-project-food/assets/pasta-desk-1x-4788b549.png 1x, /goit-project-food/assets/pasta-desk-2x-f17ab248.png 2x" media="(min-width: 1280px)" />
+          <source srcset="/goit-project-food/assets/pasta-tab-1x-05e4cf93.png 1x, /goit-project-food/assets/pasta-tab-2x-18a920ea.png 2x" media="(min-width: 768px)" />
+          <source srcset="/goit-project-food/assets/pasta-mob-1x-658b676e.png 1x, /goit-project-food/assets/pasta-mob-2x-18b99338.png 2x" media="(min-width: 320px)" />
+          <img src="/goit-project-food/assets/pasta-desk-1x-4788b549.png" width="315" alt="Pasta" />
+        </picture>
+      </li>
+      <li class="favorites__item">
+        <picture>
+          <source srcset="/goit-project-food/assets/pizza-desk-1x-5bfa1349.png 1x, /goit-project-food/assets/pizza-desk-2x-b748de7c.png 2x" media="(min-width: 1280px)" />
+          <source srcset="/goit-project-food/assets/pizza-tab-1x-3de09e71.png 1x, /goit-project-food/assets/pizza-tab-2x-75a913bb.png 2x" media="(min-width: 768px)" />
+          <source srcset="/goit-project-food/assets/pizza-mob-1x-72c5aad5.png 1x, /goit-project-food/assets/pizza-mob-2x-a9b58c65.png 2x" media="(min-width: 320px)" />
+          <img src="/goit-project-food/assets/pizza-desk-1x-5bfa1349.png" width="315" alt="Pizza" />
+        </picture>
+      </li>
+      <li class="favorites__item">
+        <picture>
+          <source srcset="/goit-project-food/assets/chicken-desk-1x-c447f9f6.png 1x, /goit-project-food/assets/chicken-desk-2x-72b2bbe9.png 2x" media="(min-width: 1280px)" />
+          <source srcset="/goit-project-food/assets/chicken-tab-1x-028e0da9.png 1x, /goit-project-food/assets/chicken-tab-2x-22605a68.png 2x" media="(min-width: 768px)" />
+          <img src="/goit-project-food/assets/chicken-desk-1x-c447f9f6.png" width="315" alt="Chicken" />
+        </picture>
+      </li>
+      <li class="favorites__item">
+        <picture>
+          <source srcset="/goit-project-food/assets/salat-desk-1x-f2082d39.png 1x, /goit-project-food/assets/salat-desk-2x-f9876fb3.png 2x" media="(min-width: 1280px)" />
+          <source srcset="/goit-project-food/assets/salat-tab-1x-0ec7d659.png 1x, /goit-project-food/assets/salat-tab-2x-9ae0cb09.png 2x" media="(min-width: 768px)" />
+          <img src="/goit-project-food/assets/salat-desk-1x-f2082d39.png" width="315" alt="Salat" />
+        </picture>
+      </li>
 
-    <section class="favorites anchor" data-section="service" id="service">
-      <div class="container">
-        <h2 class="favorites__title">Some of Our Favorites</h2>
-        <p class="favorites__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <ul class="favorites__list list">
-          <li class="favorites__item">
-            <picture>
-              <source srcset="/goit-project-food/assets/burger-desk-1x-c7872581.png 1x, /goit-project-food/assets/burger-desk-2x-b039d7cc.png 2x" media="(min-width: 1280px)" />
-              <source srcset="/goit-project-food/assets/burger-tab-1x-ce54601c.png 1x, /goit-project-food/assets/burger-tab-2x-7ba9dc87.png 2x" media="(min-width: 768px)" />
-              <source srcset="/goit-project-food/assets/burger-mob-1x-6b192506.png 1x, /goit-project-food/assets/burger-mob-2x-ae4a415c.png 2x" media="(min-width: 320px)" />
-              <img src="/goit-project-food/assets/burger-desk-1x-c7872581.png" width="315" alt="Gamburger" />
-            </picture>
-          </li>
-          <li class="favorites__item">
-            <picture>
-              <source srcset="/goit-project-food/assets/pasta-desk-1x-4788b549.png 1x, /goit-project-food/assets/pasta-desk-2x-f17ab248.png 2x" media="(min-width: 1280px)" />
-              <source srcset="/goit-project-food/assets/pasta-tab-1x-05e4cf93.png 1x, /goit-project-food/assets/pasta-tab-2x-18a920ea.png 2x" media="(min-width: 768px)" />
-              <source srcset="/goit-project-food/assets/pasta-mob-1x-658b676e.png 1x, /goit-project-food/assets/pasta-mob-2x-18b99338.png 2x" media="(min-width: 320px)" />
-              <img src="/goit-project-food/assets/pasta-desk-1x-4788b549.png" width="315" alt="Pasta" />
-            </picture>
-          </li>
-          <li class="favorites__item">
-            <picture>
-              <source srcset="/goit-project-food/assets/pizza-desk-1x-5bfa1349.png 1x, /goit-project-food/assets/pizza-desk-2x-b748de7c.png 2x" media="(min-width: 1280px)" />
-              <source srcset="/goit-project-food/assets/pizza-tab-1x-3de09e71.png 1x, /goit-project-food/assets/pizza-tab-2x-75a913bb.png 2x" media="(min-width: 768px)" />
-              <source srcset="/goit-project-food/assets/pizza-mob-1x-72c5aad5.png 1x, /goit-project-food/assets/pizza-mob-2x-a9b58c65.png 2x" media="(min-width: 320px)" />
-              <img src="/goit-project-food/assets/pizza-desk-1x-5bfa1349.png" width="315" alt="Pizza" />
-            </picture>
-          </li>
-          <li class="favorites__item">
-            <picture>
-              <source srcset="/goit-project-food/assets/chicken-desk-1x-c447f9f6.png 1x, /goit-project-food/assets/chicken-desk-2x-72b2bbe9.png 2x" media="(min-width: 1280px)" />
-              <source srcset="/goit-project-food/assets/chicken-tab-1x-028e0da9.png 1x, /goit-project-food/assets/chicken-tab-2x-22605a68.png 2x" media="(min-width: 768px)" />
-              <img src="/goit-project-food/assets/chicken-desk-1x-c447f9f6.png" width="315" alt="Chicken" />
-            </picture>
-          </li>
-          <li class="favorites__item">
-            <picture>
-              <source srcset="/goit-project-food/assets/salat-desk-1x-f2082d39.png 1x, /goit-project-food/assets/salat-desk-2x-f9876fb3.png 2x" media="(min-width: 1280px)" />
-              <source srcset="/goit-project-food/assets/salat-tab-1x-0ec7d659.png 1x, /goit-project-food/assets/salat-tab-2x-9ae0cb09.png 2x" media="(min-width: 768px)" />
-              <img src="/goit-project-food/assets/salat-desk-1x-f2082d39.png" width="315" alt="Salat" />
-            </picture>
-          </li>
-    
-          <li class="favorites__item">
-            <picture>
-              <source srcset="/goit-project-food/assets/borshch-desk-1x-e6271359.png 1x, /goit-project-food/assets/borshch-desk-2x-b744b736.png 2x" media="(min-width: 1280px)" />
-              <source srcset="/goit-project-food/assets/borshch-tab-1x-289c9067.png 1x, /goit-project-food/assets/borshch-tab-2x-e967d600.png 2x" media="(min-width: 768px)" />
-              <img src="/goit-project-food/assets/borshch-desk-1x-e6271359.png" width="315" alt="Borshch" />
-            </picture>
-          </li>
-        </ul>
-      </div>
-    </section>
-<section class="customers-say anchor"  data-section="menu" id="menu">
+      <li class="favorites__item">
+        <picture>
+          <source srcset="/goit-project-food/assets/borshch-desk-1x-e6271359.png 1x, /goit-project-food/assets/borshch-desk-2x-b744b736.png 2x" media="(min-width: 1280px)" />
+          <source srcset="/goit-project-food/assets/borshch-tab-1x-289c9067.png 1x, /goit-project-food/assets/borshch-tab-2x-e967d600.png 2x" media="(min-width: 768px)" />
+          <img src="/goit-project-food/assets/borshch-desk-1x-e6271359.png" width="315" alt="Borshch" />
+        </picture>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="customers-say" id="menu">
   <div class="container customers-say__container">
     <h2 class="customers-say__title">What our Customers Say</h2>
     <p class="customers-say__text">
@@ -314,7 +312,7 @@
     </ul>
   </div>
 </section>
-<section class="subscribe anchor" data-section="contact" id="contact">
+<section class="subscribe" id="contact">
   <div class="container">
     <div class="subscribe__box">
       <div class="subscribe__wrap">
@@ -346,105 +344,103 @@
 </section>
   </main>
   <footer class="footer">
-    <div class="section">
-      <div class="container">
-        <div class="menu-wrap-footer">
-          <div class="navigation-footer">
-            <a href="#" class="logo-footer">
-              <img src="/goit-project-food/assets/icon-logo-d483e1fe.svg" alt="site logo" />
-            </a>
-  
-            <ul class="menu-footer list">
-              <li class="menu-footer__item">
-                <a href="#home" class="menu-footer__link">Home</a>
-              </li>
-              <li class="menu-footer__item">
-                <a href="#about" class="menu-footer__link">About</a>
-              </li>
-              <li class="menu-footer__item">
-                <a href="#service" class="menu-footer__link">Service</a>
-              </li>
-              <li class="menu-footer__item">
-                <a href="#menu" class="menu-footer__link">Menu</a>
-              </li>
-              <li class="menu-footer__item">
-                <a href="#contact" class="menu-footer__link">Contact</a>
-              </li>
-            </ul>
-          </div>
-  
-          <div class="form-wrap">
-            <b class="form-title">Subscribe</b>
-            <form class="form" autocomplete="off">
-              <label class="form__label">
-                <input type="email" name="form" class="form__input" placeholder="Enter your email" />
-                <span class="error">
-                  &#9888; Not a valid email address (example@email.com)</span>
-              </label>
-              <button type="submit" class="form__button">Subscribe</button>
-            </form>
-            <p class="form-text">
-              By subscribing you agree to with our
-              <a class="form-text-second">Privacy Policy</a>
-            </p>
-          </div>
-        </div>
-  
-        <div class="info-wrap">
-          <ul class="info list">
-            <li class="info__item">
-              <a href="#" class="info__link">Privacy Policy</a>
+  <div class="section">
+    <div class="container">
+      <div class="menu-wrap-footer">
+        <div class="navigation-footer">
+          <a href="#" class="logo-footer">
+            <img src="/goit-project-food/assets/icon-logo-d483e1fe.svg" alt="site logo" />
+          </a>
+
+          <ul class="menu-footer list">
+            <li class="menu-footer__item">
+              <a href="#home" class="menu-footer__link">Home</a>
             </li>
-            <li class="info__item">
-              <a href="#" class="info__link">Terms of Service</a>
+            <li class="menu-footer__item">
+              <a href="#about" class="menu-footer__link">About</a>
             </li>
-            <li class="info__item">
-              <a href="#" class="info__link">Cookies Settings</a>
+            <li class="menu-footer__item">
+              <a href="#service" class="menu-footer__link">Service</a>
+            </li>
+            <li class="menu-footer__item">
+              <a href="#menu" class="menu-footer__link">Menu</a>
+            </li>
+            <li class="menu-footer__item">
+              <a href="#contact" class="menu-footer__link">Contact</a>
             </li>
           </ul>
-  
-          <p class="copy-text">2022 FoodSta. All right reserved.</p>
+        </div>
+
+        <div class="form-wrap">
+          <b class="form-title">Subscribe</b>
+          <form class="form" autocomplete="off">
+            <label class="form__label">
+              <input type="email" name="form" class="form__input" placeholder="Enter your email" />
+              <span class="error">
+                &#9888; Not a valid email address (example@email.com)</span>
+            </label>
+            <button type="submit" class="form__button">Subscribe</button>
+          </form>
+          <p class="form-text">
+            By subscribing you agree to with our
+            <a class="form-text-second">Privacy Policy</a>
+          </p>
         </div>
       </div>
+
+      <div class="info-wrap">
+        <ul class="info list">
+          <li class="info__item">
+            <a href="#" class="info__link">Privacy Policy</a>
+          </li>
+          <li class="info__item">
+            <a href="#" class="info__link">Terms of Service</a>
+          </li>
+          <li class="info__item">
+            <a href="#" class="info__link">Cookies Settings</a>
+          </li>
+        </ul>
+
+        <p class="copy-text">2022 FoodSta. All right reserved.</p>
+      </div>
     </div>
-  </footer>
+  </div>
+</footer>
   <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button type="button" class="modal-close" data-modal-close></button>
-      <p class="modal-title">Order Form</p>
-      <form class="modal-form">
-        <div class="modal-field">
-          <label for="user-name" class="input-text">Name</label>
-          <div class="input-wrap">
-            <input type="text" class="modal-input" name="user-name" required id="user-name" placeholder="Enter your name"
-              minlength="2" maxlength="25" />
-          </div>
+  <div class="modal">
+    <button type="button" class="modal-close" data-modal-close></button>
+    <p class="modal-title">Order Form</p>
+    <form class="modal-form">
+      <div class="modal-field">
+        <label for="user-name" class="input-text">Name</label>
+        <div class="input-wrap">
+          <input type="text" class="modal-input" name="user-name" required id="user-name" placeholder="Enter your name"
+            minlength="2" maxlength="25" />
         </div>
-        <div class="modal-field">
-          <label for="user-tel" class="input-text">Phone number</label>
-          <div class="input-wrap">
-            <input type="tel" class="modal-input" name="user-tel" required id="user-tel"
-              placeholder="Enter your phone number" minlength="10" />
-          </div>
+      </div>
+      <div class="modal-field">
+        <label for="user-tel" class="input-text">Phone number</label>
+        <div class="input-wrap">
+          <input type="tel" class="modal-input" name="user-tel" required id="user-tel"
+            placeholder="Enter your phone number" minlength="10" />
         </div>
-        <div class="modal-field">
-          <label for="user-mail" class="input-text">E-mail</label>
-          <div class="input-wrap">
-            <input type="email" class="modal-input" name="user-mail" required id="user-mail"
-              placeholder="Enter your e-mail" />
-          </div>
+      </div>
+      <div class="modal-field">
+        <label for="user-mail" class="input-text">E-mail</label>
+        <div class="input-wrap">
+          <input type="email" class="modal-input" name="user-mail" required id="user-mail"
+            placeholder="Enter your e-mail" />
         </div>
-        <button type="submit" class="modal-button">Send</button>
-      </form>
-    </div>
+      </div>
+      <button type="submit" class="modal-button">Send</button>
+    </form>
   </div>
-  <div>
-    <a class="go-up-btn" href="#home" id="go-up-btn">
-      <svg class="go-up" width="28" height="28">
-        <use href="/goit-project-food/assets/sprite-cceeb4a6.svg#arrow-right"></use>
-      </svg>
-    </a>
-  </div>
+</div>
+<a class="go-up-btn" href="#home" id="go-up-btn">
+  <svg class="go-up" width="28" height="28">
+    <use href="/goit-project-food/assets/sprite-cceeb4a6.svg#arrow-right"></use>
+  </svg>
+</a>
   <script src="./js/mobile_menu.js"></script>
   <script src="./js/modal.js"></script>
   <script src="./js/back-to-top.js"></script>
