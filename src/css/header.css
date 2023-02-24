@@ -1,8 +1,5 @@
 .header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
   z-index: 11;
   padding: 10px 0;
   background-color: var(--white__secondary__color);
