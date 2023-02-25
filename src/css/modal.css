@@ -29,6 +29,26 @@
   z-index: 2;
 }
 
+body.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+@media (orientation: landscape) {
+  .modal-window {
+    position: sticky;
+    top: 0;
+    left: 0;
+    transform: translate(50%, 0%) scale(1);
+    transition: transform var(--duration) var(--timing);
+    overflow: auto;
+  }
+
+  .backdrop {
+    overflow: auto;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .modal {
     max-width: 458px;
@@ -79,10 +99,13 @@
 .modal__form--submit-attempted:invalid .button--modal {
   border: 2px solid rgba(255, 112, 93, 1);
   background-color: #ffff;
+  opacity: .5;
+  pointer-events: none;
 }
 
 .modal__form--submit-attempted:invalid .button--modal {
   border: 1px solid rgba(255, 112, 93, 1);
+
 }
 
 .modal__form--submit-attempted:invalid .modal__error {

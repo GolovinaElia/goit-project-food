@@ -7,5 +7,5 @@ export default defineConfig({
   build: {
     outDir: '../dist',
   },
-  plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
+  plugins: [injectHTML(), FullReload(['../**/**.html'])],
 });
