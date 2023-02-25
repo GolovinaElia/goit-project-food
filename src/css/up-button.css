@@ -4,12 +4,12 @@
   transition: fill var(--accent__text__color);
 }
 
-.go-up-btn {
+.up-btn {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .go-up-btn {
+  .up-btn {
     position: fixed;
     bottom: 50px;
     right: 50px;
@@ -26,14 +26,14 @@
   }
 }
 
-.go-up-btn:hover,
-.go-up-btn:focus {
+.up-btn:hover,
+.up-btn:focus {
   border-color: var(--accent__text__color);
   transform: scale(1.1);
 }
 
-.go-up-btn:hover .go-up,
-.go-up-btn:focus .go-up {
+.up-btn:hover .go-up,
+.up-btn:focus .go-up {
   fill: var(--accent__text__color);
   transition: fill 400ms cubic-bezier(0.4, 0, 0.2, 1);
   rotate: -90deg;
